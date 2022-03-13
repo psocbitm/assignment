@@ -36,7 +36,6 @@ function App() {
         }
     }, []);
     const doc = new jsPDF();
-    doc.autoTable({ html: "#table" });
 
     function Pagination() {
         function handleNextClick() {
@@ -53,6 +52,8 @@ function App() {
         }
 
         function downloadPDF() {
+            doc.autoTable({ html: "#table" });
+
             doc.save("table.pdf");
         }
 
@@ -153,7 +154,7 @@ function App() {
                                         Gender
                                     </th>
                                     <th className="text-left py-2 px-3">Age</th>
-                                    <th className="text-left py-2 px-3">
+                                    <th className="text-left py-2 px-3 ">
                                         Email
                                     </th>
                                 </tr>
@@ -200,7 +201,7 @@ function App() {
                                             <td className="py-2 px-3">
                                                 {item.dob.age}
                                             </td>
-                                            <td className="py-2 px-3">
+                                            <td className="py-2 px-3 break-words">
                                                 {item.email}
                                             </td>
                                         </tr>
