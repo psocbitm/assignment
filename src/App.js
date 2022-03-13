@@ -106,7 +106,7 @@ function App() {
                         </a>
                     </nav>
                     <button
-                        class="bg-transparent   dark:hover:bg-stone-50 dark:hover:text-stone-800 dark:text-stone-50 hover:bg-stone-800 text-stone-700 font-semibold hover:text-white py-2 px-4 border border-stone-500 hover:border-transparent rounded"
+                        className="bg-transparent   dark:hover:bg-stone-50 dark:hover:text-stone-800 dark:text-stone-50 hover:bg-stone-800 text-stone-700 font-semibold hover:text-white py-2 px-4 border border-stone-500 hover:border-transparent rounded"
                         onClick={downloadPDF}
                     >
                         Download PDF
